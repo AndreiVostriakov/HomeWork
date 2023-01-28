@@ -9,7 +9,7 @@ int number_2 = int.Parse(Console.ReadLine());
 
 int sqr = number_2 * number_2;
 
-if(sqr == number_1)
+if (sqr == number_1)
 {
     Console.WriteLine($"{number_1} является квадратом {number_2}");
 }
