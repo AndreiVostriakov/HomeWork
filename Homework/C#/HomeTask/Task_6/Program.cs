@@ -6,14 +6,14 @@ Console.Write("Введите число: ");
 int number = int.Parse(Console.ReadLine());
 int num = number;
 
-if(number < 100)
+if (number < 100)
 {
     Console.WriteLine($"Третьей цифры в числе {number} нет");
 }
 
-while(num >= 100) 
+while (num >= 100)
 {
-    if(num < 1000)
+    if (num < 1000)
     {
         int result = num % 10;
         Console.WriteLine($"Третья цифра числа {number} является {result}");
