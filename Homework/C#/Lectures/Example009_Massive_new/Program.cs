@@ -47,7 +47,7 @@ int[] array = new int[10];
 
 FillArray(array);
 array[4] = 4;
-array[4] = 4;
+array[6] = 4;
 
 PrintArray(array);
 Console.WriteLine();
