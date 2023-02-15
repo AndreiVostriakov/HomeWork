@@ -7,44 +7,71 @@ double[] Gatearray(int size, int minValue, int maxValue)
     double[] result = new double[size];
     for (int i = 0; i < result.Length; i++)
     {
-        result[i] = Math.Round(rand.NextDouble() + rand.Next(minValue, maxValue + 1), 2);
+        result[i] = Math.Round(rand.NextDouble() + rand.Next(minValue, maxValue + 1), 4);
     }
     return result;
 }
 
-double Number(double[] array)
+double maximal(double[] everyArray)
 {
-    double maxNum = array[0];
-    double minNum = array[0];
-    if (maxNum > array[1])
+    double maxNum = everyArray[0];
+    for (int j = 1; j < everyArray.Length; j++)
     {
-        minNum = array[0];
-    }
-    else
-    {
-        maxNum = array[1];
-    }
-
-    for (int j = 2; j < array.Length; j++)
-    {
-        if (maxNum > array[j])
+        if (everyArray[j] > maxNum)
         {
-            if (minNum > array[j])
-            {
-                minNum = array[j];
-            }
+            maxNum = everyArray[j];
         }
-        maxNum = array[j];
     }
-    return maxNum - minNum;
+    return maxNum;
 }
 
+double minimal(double[] everyArray)
+{
+    double minNum = everyArray[0];
+    for (int j = 1; j < everyArray.Length; j++)
+    {
+        if (everyArray[j] < minNum)
+        {
+            minNum = everyArray[j];
+        }
+    }
+    return minNum;
+}
 
 Console.Clear();
 
 double[] array = Gatearray(5, -10, 10);
 Console.WriteLine(string.Join(", ", array));
 
-double difference = Number(array);
-Console.WriteLine(difference);
+double min = minimal(array);
+double max = maximal(array);
 
+Console.WriteLine($"Разность максимального значения {max} и минимального значения {min} массива равна: {max - min}");
+
+
+// double Number(double[] everyArray)
+// {
+//     double maxNum = everyArray[0];
+//     double minNum = everyArray[0];
+//     if (everyArray[1] > maxNum)
+//     {
+//         maxNum = everyArray[1];
+//     }
+//     else
+//     {
+//         minNum = everyArray[1];
+//     }
+
+//     for (int j = 2; j < everyArray.Length; j++)
+//     {
+//         if (maxNum > everyArray[j])
+//         {
+//             if (everyArray[j] < minNum)
+//             {
+//                 minNum = everyArray[j];
+//             }
+//         }
+//         maxNum = everyArray[j];
+//     }
+//     return maxNum minNum;
+// }
