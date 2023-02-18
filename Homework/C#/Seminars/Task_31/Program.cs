@@ -1,6 +1,4 @@
-﻿// Задайте двумерный массив. Найдите элементы, у
-// которых оба индекса чётные, и замените эти элементы на их
-// квадраты.
+﻿// Задайте двумерный массив. Найдите сумму элементов, находящихся на главной диагонали (с индексами (0,0); (1;1) и т.д
 
 int[,] GetArray(int m, int n, int minValue, int maxValue)
 {
@@ -28,21 +26,33 @@ void PrintArray(int[,] inArray)
     }
 }
 
+// void SUM(int[,] inArray)
+// {
+//     int count = 0;
+//     for (int i = 0; i < inArray.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < inArray.GetLength(1); j++)
+//         {
+//             if (i == j)
+//             {
+//                 count += inArray[i, j];
+//             }
+//         }
+//     }
+//     Console.WriteLine(count);
+// }
+
 void SUM(int[,] inArray)
 {
+    int size = inArray.GetLength(0) > inArray.GetLength(1) ? inArray.GetLength(1) : inArray.GetLength(0);
     int count = 0;
-    for (int i = 0; i < inArray.GetLength(0); i++)
+    for (int i = 0; i < size; i++)
     {
-        for (int j = 0; j < inArray.GetLength(1); j++)
-        {
-            if (i == j)
-            {
-                count += inArray[i, j];
-            }
-        }
+        count += inArray[i, i];
     }
     Console.WriteLine(count);
 }
+
 
 Console.Write("Введите кол-во строк: ");
 int row = int.Parse(Console.ReadLine()!);
@@ -54,3 +64,6 @@ int[,] array2D = GetArray(row, col, -10, 10);
 PrintArray(array2D);
 Console.WriteLine();
 SUM(array2D);
+// int number = SUM(array2D);
+// Console.Write(number);
+
