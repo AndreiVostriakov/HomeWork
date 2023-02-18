@@ -16,17 +16,6 @@ int[,] GetArray(int m, int n, int minValue, int maxValue)
     return result;
 }
 
-void ConvertArray(int[,] arr)
-{
-   for (int i = 0; i < arr.GetLength(0); i +=2)
-    {
-        for (int j = 0; j < arr.GetLength(1); j +=2)
-        {
-                arr[i, j] *= arr[i, j];    
-        }
-    }  
-}
-
 void PrintArray(int[,] inArray)
 {
     for (int i = 0; i < inArray.GetLength(0); i++)
@@ -39,6 +28,19 @@ void PrintArray(int[,] inArray)
     }
 }
 
+void ConvertArray(int[,] arr)
+{
+   for (int i = 0; i < arr.GetLength(0); i +=2)
+    {
+        for (int j = 0; j < arr.GetLength(1); j +=2)
+        {
+                arr[i, j] *= arr[i, j];    
+        }
+    }  
+}
+
+
+
 Console.Write("Введите кол-во строк: ");
 int row = int.Parse(Console.ReadLine()!);
 Console.Write("Введите кол-во столбцов: ");
@@ -49,4 +51,3 @@ int[,] array2D = GetArray(row, col, -10, 10);
 PrintArray(array2D);
 Console.WriteLine();
 ConvertArray(array2D);
-PrintArray(array2D);
