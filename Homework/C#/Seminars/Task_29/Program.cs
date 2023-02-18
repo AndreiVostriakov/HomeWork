@@ -26,6 +26,8 @@ void PrintArray(int[,] inArray)
     }
 }
 
+
+
 Console.Write("Введите кол-во строк: ");
 int row = int.Parse(Console.ReadLine());
 Console.Write("Введите кол-во столбцов: ");
