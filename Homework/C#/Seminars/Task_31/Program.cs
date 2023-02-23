@@ -59,11 +59,11 @@ int row = int.Parse(Console.ReadLine()!);
 Console.Write("Введите кол-во столбцов: ");
 int col = int.Parse(Console.ReadLine()!);
 
-int[,] array2D = GetArray(row, col, -10, 10);
+int[,] array = GetArray(row, col, -10, 10);
 
-PrintArray(array2D);
+PrintArray(array);
 Console.WriteLine();
-SUM(array2D);
+SUM(array);
 // int number = SUM(array2D);
 // Console.Write(number);
 
