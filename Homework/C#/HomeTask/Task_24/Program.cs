@@ -29,18 +29,18 @@ void PrintArray(int[,] inArray)
 
 int[] SumOfEachLine(int[,] inArray)
 {
-    int[] oldArray = new int[inArray.GetLength(0)];
+    int[] NewArray = new int[inArray.GetLength(0)];
     int sum = 0;
     for (int i = 0; i < inArray.GetLength(0); i++)
     {
         for (int j = 0; j < inArray.GetLength(1); j++)
         {
             sum += inArray[i, j];
-            oldArray[i] = sum;
+            NewArray[i] = sum;
         }
         sum = 0;
     }
-    return oldArray;
+    return NewArray;
 }
 
 void MinSum(int[] inArray)
