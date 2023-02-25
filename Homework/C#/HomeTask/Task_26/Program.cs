@@ -44,9 +44,14 @@ int col = int.Parse(Console.ReadLine()!);
 Console.Write("Введите кол-во строк: ");
 int row = int.Parse(Console.ReadLine()!);
 
+if (page * col * row <= 89)
+{
+    int[,,] array = GetArray(page, row, col);
 
-int[,,] array = GetArray(page, row, col);
-
-PrintArray(array);
-Console.WriteLine();
-
+    PrintArray(array);
+    Console.WriteLine();
+}
+else
+{
+    Console.WriteLine("Массив слишком большой, числа будут повторяться");
+}
