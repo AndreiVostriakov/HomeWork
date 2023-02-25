@@ -64,7 +64,6 @@ if (array1.GetLength(1) == array2.GetLength(0))
 {
     newArray = MultiplicationArray(array1, array2);
     PrintArray(newArray);
-
 }
 else if (array2.GetLength(1) == array1.GetLength(0))
 {
