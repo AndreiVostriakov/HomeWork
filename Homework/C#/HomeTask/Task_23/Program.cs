@@ -40,8 +40,6 @@ int[,] sortArray(int[,] inArray)
                     temp = inArray[i, m];
                     inArray[i, m] = inArray[i, m - 1];
                     inArray[i, m - 1] = temp;
-
-
                 }
             }
             ;
