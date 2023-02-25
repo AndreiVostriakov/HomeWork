@@ -1,4 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Сгенерировать двумерный массив и вывести его на экран
 
 int[,] GetArray(int m, int n, int minValue, int maxValue)
 {
