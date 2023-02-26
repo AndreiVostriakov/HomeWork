@@ -13,7 +13,6 @@ int Recursiv(int N, int M)
     {
         return Recursiv(N + 1, M) + N;
     }
-
 }
 
 Console.Write("Введите число N: ");
