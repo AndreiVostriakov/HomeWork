@@ -18,8 +18,8 @@ int A(int m, int n)
 }
 
 Console.Write("Введите число N: ");
-int N = int.Parse(Console.ReadLine());
-Console.Write("Введите число M: ");
 int M = int.Parse(Console.ReadLine());
-int akkerman = A(N, M);
+Console.Write("Введите число M: ");
+int N = int.Parse(Console.ReadLine());
+int akkerman = A(M, N);
 Console.Write(akkerman);
