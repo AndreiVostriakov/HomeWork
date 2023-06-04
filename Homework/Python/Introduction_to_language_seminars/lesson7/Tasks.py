@@ -94,8 +94,8 @@ def send_welcome(message):
 def greetings(message):
 	# print(message)
 	text = message.text
-	if "привет" in text:
-		bot.reply_to(message, f"Привет!, {message.from_user.first_name}")
+	if "Привет" in text:
+		bot.reply_to(message, f"Привет, {message.from_user.first_name}")
 	elif text == "погода":
 		req = requests.get("https://wttr.in/?0T")
 		bot.reply_to(message, req.text)
