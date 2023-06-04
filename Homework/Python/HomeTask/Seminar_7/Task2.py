@@ -12,8 +12,8 @@ def retry(max_retries):
     return decorator
 
 @retry(5)
-def might_fail():
+def greening():
     print("Как дела")
     raise Exception
 
-might_fail()
+greening()
