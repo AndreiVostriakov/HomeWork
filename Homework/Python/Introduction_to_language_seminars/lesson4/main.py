@@ -27,6 +27,7 @@ def task0():
     # print(answer)
 
 def task1():
+    start = time()
     string_1 = "a a a b c a a d c d d".split()
     my_dict = {}
     for elem in string_1:
