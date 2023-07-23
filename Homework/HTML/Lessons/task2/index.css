@@ -1,0 +1,33 @@
+@font-face{
+    font-family: teddy_bear;
+    src: url(fonts/teddy-bear.ttf);
+}
+h1{
+    color: rgb(255, 0, 0);
+    font-family: teddy_bear, sans-serif;
+}
+h2{
+    color: chocolate;
+}
+a{
+    color: #00ff26;
+}
+body{
+    background-color: aliceblue;
+}
+img{
+    width: 300px;
+}
+.big_text{
+    font-size: 1.5rem;
+}
+ul{
+    list-style-type: square;
+}
+a:hover{
+    color: blueviolet;
+}
+#wrapper{
+    width: 50%;
+    margin: 0 auto;
+}
