@@ -1,0 +1,43 @@
+@font-face{
+    font-family: art-nouveau-bistro;
+    src: url(font/art-nouveau-bistro.ttf);
+}
+@font-face{
+    font-family: artemon;
+    src: url(font/helveticaneuecyr-ultralight3.ttf);
+}
+h1{
+    font-family: art-nouveau-bistro, sans-serif;
+    color: rgba(27, 112, 85, 0.669);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+p, ol, h2, ul{
+    font-family: helveticaneuecyr-ultralight3, sans-serif;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px
+}
+p, ol, ul{
+    color: rgb(14, 94, 164);
+}
+a:hover{
+    color: blueviolet;
+}
+a{
+    color: rgb(17, 173, 15);
+}
+ul{
+    list-style-type: symbols(-);
+}
+h2{
+    color: brown;
+}
