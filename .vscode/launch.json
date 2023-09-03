@@ -2,18 +2,62 @@
     "version": "0.2.0",
     "configurations": [
         {
-            // Use IntelliSense to find out which attributes exist for C# debugging
-            // Use hover for the description of the existing attributes
-            // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+            "type": "java",
+            "name": "Task1",
+            "request": "launch",
+            "mainClass": "Homework.Java.Lessons.Task2.Task1",
+            "projectName": "Programmer_bdbd74e7"
+        },
+        {
+            "type": "java",
+            "name": "Tasktwo",
+            "request": "launch",
+            "mainClass": "Homework.Java.Homework.Task2.Tasktwo",
+            "projectName": "Programmer_bdbd74e7"
+        },
+        {
+            "type": "java",
+            "name": "Task1",
+            "request": "launch",
+            "mainClass": "Homework.Java.Homework.Task2.Task1",
+            "projectName": "Programmer_bdbd74e7"
+        },
+        {
+            "type": "java",
+            "name": "Printer",
+            "request": "launch",
+            "mainClass": "Homework.Java.Homework.Task2.Printer",
+            "projectName": "Programmer_bdbd74e7"
+        },
+        {
+            "type": "java",
+            "name": "Tasks",
+            "request": "launch",
+            "mainClass": "Homework.Java.Lessons.Task1.Tasks",
+            "projectName": "Programmer_bdbd74e7"
+        },
+        {
+            "type": "java",
+            "name": "programm",
+            "request": "launch",
+            "mainClass": "Homework.Java.Homework.Task1.programm",
+            "projectName": "Programmer_bdbd74e7"
+        },
+        {
+            "type": "java",
+            "name": "Homework",
+            "request": "launch",
+            "mainClass": "Homework.Java.Homework.Task1.Homework",
+            "projectName": "Programmer_bdbd74e7"
+        },
+        {
             "name": ".NET Core Launch (console)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/Homework/C#/Lectures/Example001_HelloConsole/bin/Debug/net6.0/Example001_HelloConsole.dll",
             "args": [],
             "cwd": "${workspaceFolder}/Homework/C#/Lectures/Example001_HelloConsole",
-            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
         },
